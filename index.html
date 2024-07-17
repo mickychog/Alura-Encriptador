@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="shortcut icon" href="img/candado.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script defer src="https://app.embed.im/snow.js"> </script>  
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="encriptador">
+            <h1 class="encriptador__logo"><img class="encriptador__img" src="./img/Logo.png" alt=""></h1>
+            <div class="input">
+                <form class="input__form" action="">
+                    <textarea class="input__texto textarea" id="texto" type="text"
+                        placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="input__extra">
+                        <img class="extra__smilei" src="img/smile.svg" alt="smile">
+                        <img class="extra__vectorp" src="img/Vectorp.svg" alt="vectorp">
+                        <img class="extra__vector" src="img/Vector.svg" alt="vector">
+                        <p class="input__advertencia">  Solo letras minúsculas y sin acentos</p>
+                        <a class="boton-borrar " id="botonborrar" type="button" value="borrar"><span class="boton__span boton__span-borrar">borrar</span></a>
+                    </div>
+                    <div class="input__botones">
+                        <a class=" boton" id="botonEnc" type="button" value="Encriptar"><span class="boton__span boton__span-encriptar">Encriptar</span></a>
+                        <a class="boton" id="botonDec" type="button" value="Desencriptar"><span class="boton__span boton__span-desencriptar">Desencriptar</span></a>
+
+                    </div>
+                </form>
+
+            </div>
+
+
+
+            <div class="output">
+                <form class="output__form" action="">
+                    <div class="output__texto">
+                        <textarea class="output__textarea textarea" name="tArea" id="tArea" cols="" rows=""></textarea>
+                        <a class="boton " id="botonCop" type="button" value="Copiar"><span class="boton__span boton__span-copiar ">Copiar</span></a>
+                    </div>
+                    <div id="tapa" class="output__tapa">
+                        
+                        <p class="output__parrado1">Ningún mensaje fue encontrado</p>
+                        <p class="output__parrado2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p> Desarrollado por mickychog</p>
+            <div class="footer__nombre">
+                
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<script src="main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</html>
